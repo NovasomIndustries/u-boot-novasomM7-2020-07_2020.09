@@ -1,0 +1,4 @@
+#!/bin/sh
+sudo dd if=idbloader.img of=/dev/sdb seek=64 conv=notrunc status=progress
+sudo dd if=u-boot.img of=/dev/sdb seek=16384 conv=notrunc status=progress
+sync
